@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 1;
+}
+
+body {
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inknut Antiqua', cursive;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.cursor {
+    position: fixed;
+    top: -5px;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    position: fixed;
+    z-index: 10;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay h1 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 140%;
+    letter-spacing: 7px;
+    position: relative;
+    overflow: hidden;
+    height: 168px;
+    width: 1000px;
+}
+
+.overlay h1 span {
+    position: absolute;
+}
